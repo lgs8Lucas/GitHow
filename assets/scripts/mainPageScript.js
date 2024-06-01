@@ -19,6 +19,6 @@ async function textoInterativo(tag, frase, t) {
     
 }
 
-frase = "Aprenda HTML, CSS e JavaScript de uma maneira simples e interativa|"
+frase = "Aprenda HTML, CSS e JavaScript de uma maneira simples e interativa.|"
 const textP = document.getElementById('textoInterativo')
 textoInterativo(textP, frase, 75)

@@ -57,11 +57,6 @@ function changeSize(opt, e) {
     space.css('align-items', selectAlign.val())
 }
 
-
-
-
-
-
 selectDirection.on('change', changeDirection)
 selectJustify.on('change', changeJustify)
 selectAlign.on('change', changeAlign)
@@ -71,14 +66,6 @@ selectWidth.on('change', o=>{
 selectHeight.on('change', o=>{
     changeSize('height', selectHeight.val())
 })
-
-
-
-
-
-
-
-
 
 {
     changeSize('width', selectWidth.val())

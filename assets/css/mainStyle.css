@@ -51,8 +51,7 @@ nav img{
 main pre{
     background-color: var(--bbyBlu);
     border-radius: 10px;
-    width: 900px;
-    padding: 5px;
+    padding: 1em;
     text-align: start;
     font-weight: 700;
     margin: 20px 0 10px 0;
@@ -84,4 +83,8 @@ main p{
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+h2{
+    font-size: 1.5em;
 }
