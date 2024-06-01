@@ -63,18 +63,56 @@
             <button type="button" class="btn btn-outline-primary" onclick="criarItem()">Adicionar Item</button>
             <button type="button" class="btn btn-outline-danger" onclick="removerItem() ">Remover Item</button>
         </div>
-        <div class="mb-3 text-right">
-            <label for="selectDirection">Display direction: </label>
-            <select class="form-select" id="selectDirection">
-                <option value="column" selected>column</option>
-                <option value="column-reverse">column-reverse</option>
-                <option value="row">row</option>
-                <option value="row-reverse">row-reverse</option>
-            </select>
+        <div class="mb-3 row">
+            <div class="col-sm-12 col-md-4">
+                <label for="selectDirection">Display direction: </label>
+                <select class="form-select" id="selectDirection">
+                    <option value="column">column</option>
+                    <option value="column-reverse">column-reverse</option>
+                    <option value="row" selected>row</option>
+                    <option value="row-reverse">row-reverse</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <label for="selectJustify">Justify content: </label>
+                <select class="form-select" id="selectJustify">
+                    <option value="center">center</option>
+                    <option value="baseline">baseline</option>
+                    <option value="left" selected>left</option>
+                    <option value="right">right</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-between">space-between</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <label for="selectAlign">Align Items: </label>
+                <select class="form-select" id="selectAlign">
+                    <option value="center">center</option>
+                    <option value="baseline">baseline</option>
+                    <option value="end">end</option>
+                    <option value="start" selected>start</option>
+                </select>
+            </div>
         </div>
-        <div id="testSpace" class="mb-3">
-            
+        <div class="mb-3 row">
+            <div class="col-sm-12 col-md-6">
+                <label for="selectWidth">Width: </label>
+                <select class="form-select" id="selectWidth">
+                    <option value="1">100%</option>
+                    <option value="2"selected>100px</option>
+                    <option value="3">crescente</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <label for="selectHeight">Height: </label>
+                <select class="form-select" id="selectHeight">
+                    <option value="1">100%</option>
+                    <option value="2"selected>100px</option>
+                    <option value="3">crescente</option>
+                </select>
+            </div>
         </div>
+        <div id="testSpace" class="mb-3"></div>
     </main>
 
     <div class="gh-bg-primary text-white">
@@ -90,8 +128,11 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="../scripts/fexboxPageScript.js"></script>
 </body>
 
