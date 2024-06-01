@@ -1,0 +1,31 @@
+@import url(mainStyle.css);
+
+:root{
+    --bbypink: #FFD0D0;
+    --pink: #f77f8d;
+}
+
+#testSpace{
+    background-color: #fff;
+    min-height: 500px;
+    border: 5px solid var(--weightBlu);
+    display: flex;
+}
+
+.item{
+    background-color: var(--bbyBlu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 5px solid var(--aqua);
+    color: var(--aqua);
+}
+
+.item:nth-child(odd){
+    color: var(--pink);
+    background-color: var(--bbypink);
+    border: 5px solid var(--pink);
+}

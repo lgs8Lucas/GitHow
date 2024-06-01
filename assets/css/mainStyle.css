@@ -2,7 +2,8 @@
     --weightBlu: #265073;
     --aqua: #2D9596;
     --bbyBlu: #9AD0C2;
-    --beige: #F1FADA;
+    --beige: #f1fada9c;
+    --dark: #6d6d6d;
 }
 
 .gh-bg-primary{
@@ -45,4 +46,42 @@ nav img{
 
 .t1{
     text-align: justify;
+}
+
+main pre{
+    background-color: var(--bbyBlu);
+    border-radius: 10px;
+    width: 900px;
+    padding: 5px;
+    text-align: start;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+main p{
+    text-align: justify;
+}
+
+.main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main img{
+    margin-left: 10px;
+    width: 400px;
+}
+
+.imgSide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.centerCont{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

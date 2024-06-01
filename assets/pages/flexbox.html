@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHow - Javascript</title>
+    <title>GitHow - Simulador de FlexBox</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/mainStyle.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/flexboxPageStyle.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg gh-bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            
             <a class="navbar-brand" href="#">
                 <div class="inline">
                     <img src="../images/logo.png" alt="">
@@ -32,7 +32,7 @@
                         <a class="nav-link" aria-current="page" href="../../index.html">Início</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Aprendizado
                         </a>
@@ -43,7 +43,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Simulação
                         </a>
@@ -57,41 +57,30 @@
         </div>
     </nav>
 
-    <main class="container main">
-        <p>Após trilharmos os caminhos de aprendizado desde HTML à CSS, vamos agora explorar a 3° fatia deste bolo, o <strong>Javascript</strong>. Porém, antes vamos recapitular os conceitos já estudados... Segue abaixo: </p>
-        <p><strong>HTML</strong> é a linguagem de marcação que nós usamos para estruturar e dar significado para o nosso conteúdo web. Por exemplo, definindo parágrafos, cabeçalhos, tabelas de conteúdo, ou inserindo imagens e vídeos na página.</p>
-        <p><strong>CSS</strong> é uma linguagem de regras de estilo que nós usamos para aplicar estilo ao nosso conteúdo HTML. Por exemplo, definindo cores de fundo e fontes, e posicionando nosso conteúdo em múltiplas colunas.</p>
-
-        <h1>Javascript</h1>
-        <div class="imgSide">
-            <div>
-                <p>O JavaScript, ou JS, como muitos chamam carinhosamente, é uma linguagem de programação interpretada de alto nível que, segundo a Pesquisa de Desenvolvedores do Stack Overflow de 2022, é a mais popular no mundo. Isso se deve principalmente ao fato de que o JavaScript é a linguagem padrão que os navegadores interpretam e que com HTML (“HiperText Markup Language” ou linguagem de Marcação de HiperTexto, utilizada nos navegadores) e CSS (“Cascading Style Sheets”, folhas de estilo em cascata, em Português) formam a base de toda a Web.</p>
-            <br>
-            <p>JavaScript permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc. — você pode apostar que o JavaScript provavelmente está envolvido. </p>
-            <p>Tendo em mente o que significa JS e os cenários de utilização dessa linguagem, não é difícil imaginar o seu poder. Desde a sua criação até os dias de hoje, o JavaScript evoluiu bastante e sua comunidade é muito forte e consolidada</p>
-            </div>
-            <img src="../images/anexoJS1.png" alt="">
+    <main class="container">
+        <h1 class="mt-3">Simulador de Flexbox</h1>
+        <div class="mb-3">
+            <button type="button" class="btn btn-outline-primary" onclick="criarItem()">Adicionar Item</button>
+            <button type="button" class="btn btn-outline-danger" onclick="removerItem() ">Remover Item</button>
         </div>
-
-        <p>No código abaixo, vamos um exemplo de interação da página HTML com o Javascript atráves de um botãom veja: </p>
-        <div class="centerCont">
-            <pre>
-                <code>< button type="button"
-                    onclick="document.getElementById('demo').innerHTML = Date()">
-                    Click me to display Date and Time.
-                    < /button></code>
-            </pre>
+        <div class="mb-3 text-right">
+            <label for="selectDirection">Display direction: </label>
+            <select class="form-select" id="selectDirection">
+                <option value="column" selected>column</option>
+                <option value="column-reverse">column-reverse</option>
+                <option value="row">row</option>
+                <option value="row-reverse">row-reverse</option>
+            </select>
         </div>
-
+        <div id="testSpace" class="mb-3">
+            
+        </div>
     </main>
 
-    <!--Footer-->
     <div class="gh-bg-primary text-white">
         <div class="container">
             <footer class="py-5">
                 <div class="container-fluid">
-                    <a class="navbar-brand link-light" href="../../index.html">
-                    </a>
                     <a class="navbar-brand link-light" href="../../index.html">GitHow</a>
                 </div>
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
@@ -102,5 +91,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../scripts/fexboxPageScript.js"></script>
 </body>
+
 </html>
