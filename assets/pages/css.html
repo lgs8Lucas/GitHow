@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg gh-bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            
+
             <a class="navbar-brand" href="#">
                 <div class="inline">
                     <img src="../images/logo.png" alt="">
@@ -60,10 +60,42 @@
     <main class="container main">
         <h1>CSS</h1>
         <p>
-            CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML(incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.
+            CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para descrever a
+            apresentação de um documento escrito em HTML ou em XML(incluindo várias linguagens em XML como SVG, MathML
+            ou XHTML). O CSS descreve como elementos são mostrados na tela.
         </p>
         <p>
-            CSS é uma das principais linguagens da open web e é padronizada em navegadores web de acordo com as especificação da W3C. Desenvolvido em níveis, o CSS1 está atualmente obsoleto, o CSS2.1 é uma recomendação e o CSS3.
+            CSS é uma das principais linguagens da open web e é padronizada em navegadores web de acordo com as
+            especificação da W3C. Desenvolvido em níveis, o CSS1 está atualmente obsoleto, o CSS2.1 é uma recomendação e
+            o CSS3.
+        </p>
+        <p>
+            As CSS funcionam através de seletores, veja o código de exemplo.
+        </p>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <pre style="margin-top: 0;">
+                    <code>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+                    </code>
+                </pre>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <p>
+                    O codigo seleciona todas as tags div da página e deixa todas com a altura e lagura de 100px e cor de fundo azul.
+                </p>
+                <p>
+                    Você pode colocar apenas o nome da tag para selecionar todas as tags, colocar .nome-da-classe para selecionar todos os elementos que possuem essa classe, #id para selecionar o elemento do ID específico ou [atributo] para selecionar os elementos que possuem o atributo específicado.
+                </p>
+            </div>                
+        </div>
+        <p>
+            Agora que você ja sabe criar a estrutura da página que tal aprender a deixa-la mais dinâmica?
+            <a href="javascript.html" class="btn btn-outline-primary">Aprenda JavaScript</a>
         </p>
     </main>
 
@@ -83,6 +115,9 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
