@@ -9,6 +9,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/mainStyle.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+
+    <script src="../scripts/domScript.js"></script>
 </head>
 
 <body>
@@ -57,7 +59,45 @@
     </nav>
 
     <main class="container main">
-
+        <h1>DOM - Document Object Model</h1>
+        <span>significa Modelo de Documento do Objeto; trata-se da modelagem de todo o HTML.</span>
+        <br>
+        <p>O DOM é como uma árvore genealógica, porém, de forma invertida. O elemento que antecede o document é o window, que nada mais é que a janela do navegador. Em sua estrutura, o document está no topo como objeto global e tem como elemento raiz a tag html e todas as outras descendem dela através das suas ramificações (branchs).</p>
+        <p>A tag html, objeto pai, apresenta dois objetos filhos: o head e o body (o cabeçalho e o corpo). Os objetos que seguem nas ramificações de baixo são denominados como child, e os de cima, parent. A tag head é parent da tag title, e a body é parent das tags a e h1, e assim sucessivamente, de acordo com a hierarquia. Das tags, derivam os atributos, e destes, seus valores.</p>
+        <p><strong>Para realizar essas ações temos alguns métodos, tais como: </strong></p>
+        <ul>
+            <li>document.getElementById();</li>
+            <li>document.getElementsByClass();</li>
+            <li>document.getElementsByTagName();</li>
+            <li>document.querySelector();</li>
+            <li>document.querySelectorAll();</li>
+            <li>document.createElement();</li>
+            <li>element.addEventListener();</li>
+        </ul>
+        <p>No código abaixo: </p>
+        <div class="imgSide">
+            <div class="centerCont">
+                <pre>
+                    <code>
+    &lt;!DOCTYPE html>
+    &lt;html>
+    &lt;head>
+        &lt;title>My title</title>
+    &lt;/head>
+    &lt;body>
+        &lt;a href="My link"></a>           
+        &lt;h1>My header</h1>
+    &lt;/body>
+    &lt;/html></code>
+                </pre>
+            </div>
+            <div>
+                <p>Vamos usar uma das propriedades acima para manipular o DOM, o <strong>document.getElementById()</strong> para achar o h1 através de seu ID, e o <strong>.innerText</strong> para modificar o conteúdo desta tecla h1. Veja o resultado:</p>
+                <p>Digite o texto pelo qual deseja substituir aqui: <input type="text" name="" id="text"></p>
+                <button class="btn btn-success" onclick="substituir()">Substituir</button>
+                <h1 id="h1">O testo será modificado aqui!</h1>
+            </div>
+        </div>
     </main>
 
     <!--Footer-->

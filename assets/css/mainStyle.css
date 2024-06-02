@@ -72,6 +72,10 @@ main p{
     width: 400px;
 }
 
+main ul li{
+    text-align: start;
+}
+
 .imgSide{
     display: flex;
     flex-direction: row;
